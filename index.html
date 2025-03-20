@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
 
         body {
-            background-color: #1e242b;
+            background-color: #1f242a;
             color: #FFFFFF;
             font-family: 'Inter', sans-serif;
             margin: 0;
@@ -38,8 +38,9 @@
         .title {
             text-align: center;
             font-size: 15px;
-            font-weight: 600;
+            font-weight: 500;
             flex-grow: 1;
+            width: 50px;
         }
 
         /* Status Section */
@@ -51,7 +52,7 @@
         .amount {
             font-family: 'Roboto', sans-serif;
             font-size: 30px;
-            font-weight: 700;
+            font-weight: 520;
         }
 
         .completed {
@@ -59,8 +60,8 @@
             align-items: center;
             justify-content: center;
             font-size: 16px;
-            color: #00C076;
-            font-weight: 600;
+            color: #5dcba1;
+            font-weight: 450;
             margin-top: 5px;
         }
 
@@ -70,42 +71,53 @@
 
         .info-text {
             text-align: center;
-            font-size: 12px;
+            font-size: 10.5px;
             color: #A0A0A0;
             margin-top: 5px;
             width: 100%;
             padding: 0 15px;
             box-sizing: border-box;
+            margin-bottom: 0;
         }
 
         .help-link {
             text-align: center;
-            font-size: 13px;
+            font-size: 10.5px;
             color: #F0B90B;
-            margin-top: 5px;
+            margin-top: 0;
             cursor: pointer;
+            margin-bottom: 25px;
+        }
+
+        hr {
+          height: 0.5px;
+          border: none;
+          background-color: #2f2e2e;
+          margin-bottom: 4px;
         }
 
         /* Details Section */
         .details-section {
-            margin-top: 20px;
+            margin-top: 36px;
             font-size: 14px;
         }
 
         .details-section p {
             margin: 5px 0;
-            color: #A0A0A0;
+            color: #9e9c9c;
         }
 
         .row {
             display: flex;
             justify-content: space-between;
+            font-size: 12px;
             align-items: center;
-            margin: 8px 0;
+            margin: 9px 0;
         }
 
         .row .value {
             color: white;
+            font-size: 12px;
             text-align: right;
             word-break: break-word;
         }
@@ -120,10 +132,11 @@
         }
 
         .copy-icon {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             margin-left: 8px;
             cursor: pointer;
+            margin-top: 0px;
         }
 
         .txd-vle {
@@ -136,10 +149,19 @@
             justify-content: flex-end;
             flex-wrap: wrap;
             text-align: right;
+            }
+
+        .txid {
+          
         }
 
         .txid span, .address span {
             word-break: break-word;
+            margin-top: 15px;
+
+        }
+        .txid span {
+          margin-top: 17px;
         }
 
         .time-x {
@@ -165,6 +187,9 @@
             <p class="info-text">Crypto transferred out of Binance. Please contact the recipient platform for your transaction receipt.</p>
             <p class="help-link">Why hasn’t my withdrawal arrived?</p>
         </div>
+        
+        <hr>
+  
 
         <div class="details-section">
             <div class="row">
