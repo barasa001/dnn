@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Withdrawal Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+        @font-face {
+    font-family: 'BinancePlex';
+    font-display: swap;
+    src: url('https://bin.bnbstatic.com/static/fonts/bp/BinancePlex-Regular.woff2') format('woff2'),
+         url('https://bin.bnbstatic.com/static/fonts/bp/BinancePlex-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+
 
         body {
             background-color: #1f242a;
             color: #FFFFFF;
-            font-family: 'Inter', sans-serif;
+            font-family: 'BinancePlex', Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -50,9 +60,19 @@
         }
 
         .amount {
-            font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            font-weight: 520;
+            font-family: 'BinancePlex', Arial;
+            font-size: 25px;
+            font-weight: 548;
+            color: rgb(227, 233, 239);
+        }
+        .amount .num {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 548;
+            margin-left: 0px;
+        }
+        
+        .amount .text {
+            font-family: 'Nunito', sans-serif;
         }
 
         .completed {
@@ -179,7 +199,10 @@
         </div>
 
         <div class="status-section">
-            <div class="amount">-30 USDT</div>
+            <div class="amount"> 
+                <span class="num">-</span>
+                <span class="num">700</span>
+                <span class="text"> USDT</span></div>
             <div class="completed">
                 <img src="tickn.png" alt="Completed">
                 Completed
